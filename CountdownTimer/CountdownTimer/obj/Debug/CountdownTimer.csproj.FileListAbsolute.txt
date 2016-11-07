@@ -16,3 +16,11 @@ C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\Countdo
 C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.MainForm.resources
 C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.Properties.Resources.resources
 C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.csproj.GenerateResource.Cache
+D:\Kod\Visual Studio 2013\Projects\C#\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.csprojResolveAssemblyReference.cache
+D:\Kod\Visual Studio 2013\Projects\C#\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.MainForm.resources
+D:\Kod\Visual Studio 2013\Projects\C#\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.Properties.Resources.resources
+D:\Kod\Visual Studio 2013\Projects\C#\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.csproj.GenerateResource.Cache
+D:\Kod\Visual Studio 2013\Projects\C#\CountDown\CountdownTimer\CountdownTimer\bin\Debug\CountdownTimer.exe
+D:\Kod\Visual Studio 2013\Projects\C#\CountDown\CountdownTimer\CountdownTimer\bin\Debug\CountdownTimer.pdb
+D:\Kod\Visual Studio 2013\Projects\C#\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.exe
+D:\Kod\Visual Studio 2013\Projects\C#\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.pdb

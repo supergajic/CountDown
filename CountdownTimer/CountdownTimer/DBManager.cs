@@ -38,11 +38,24 @@ namespace CountdownTimer
                     latitude = myReader.GetString(3);
                     longitude = myReader.GetString(4);
 
-                    if (latitude != "")
+                    if (latitude != "" && listUser.Count == 0)
                     {
                         listUser.Add(new UserList(id, username, latitude, longitude, counter));
                     }
-
+                    else if (latitude != "")
+                    {
+                        for (int i = 0; i < listUser.Count; i++)
+                        {
+                            if (id == listUser[i].id)
+                            {
+                                break;
+                            }
+                            else if (i == listUser.Count - 1)
+                            {
+                                listUser.Add(new UserList(id, username, latitude, longitude, counter));
+                            }
+                        }
+                    }
                 }
             }
 
@@ -132,9 +145,56 @@ namespace CountdownTimer
 
         }
 
-        public void RemoveUserInfoAndTreasure()
+        public void RemoveUserInfo(int in_id, int user_index)
         {
+            int id = in_id;
+            //string username = null;
+            //string latitude = null;
+            //string longitude = null;
 
+            try
+            {
+                string myConnection = "datasource=gocommander.sytes.net;port=3306;username=commander;password=commander123;database=gocommander";                
+                MySqlConnection myConn = new MySqlConnection(myConnection);
+
+                MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
+                MySqlCommand verifyCommand = new MySqlCommand("UPDATE users SET latitude = '', longitude = '' WHERE id=" + id + " ;", myConn);
+                myConn.Open();
+                verifyCommand.ExecuteNonQuery();
+                myConn.Close();
+
+                RemoveTreasure(id);
+
+                listUser.RemoveAt(user_index);
+            }
+            catch (Exception ex)
+            {
+                //return null;
+            }
+        }
+
+        public void RemoveTreasure(int in_id)
+        {
+            int id = in_id;
+            //string username = null;
+            //string latitude = null;
+            //string longitude = null;
+
+            try
+            {
+                string myConnection = "datasource=gocommander.sytes.net;port=3306;username=commander;password=commander123;database=gocommander";
+                MySqlConnection myConn = new MySqlConnection(myConnection);
+
+                MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
+                MySqlCommand verifyCommand = new MySqlCommand("DELETE treasures WHERE uid=" + id + " ;", myConn);
+                myConn.Open();
+                verifyCommand.ExecuteNonQuery();
+                myConn.Close();
+            }
+            catch (Exception ex)
+            {
+                //return null;
+            }
         }
     }
 }

@@ -28,12 +28,11 @@ namespace CountdownTimer
         private void timer_Tick(object sender, EventArgs e)
         {
             AddToListFromDB();
-            CompareValuesFromDB();
         }
 
         private void AddToListFromDB()
         {
-            dbManager.listUser.Clear();
+            //dbManager.listUser.Clear();
             dbManager.GetUsers();
             lstBoxUsers.Items.Clear();
 
@@ -72,6 +71,18 @@ namespace CountdownTimer
 
                 lstBoxUsers.Items.Add(result);
 
+            }
+        }
+
+        private void timerDB_Tick(object sender, EventArgs e)
+        {
+            CompareValuesFromDB();
+            for (int i = 0; i < dbManager.listUser.Count; i++)
+            {
+                if (dbManager.listUser[i].counter > 4)
+                {
+                    dbManager.RemoveUserInfo(dbManager.listUser[i].id, i);
+                }
             }
         }
     }

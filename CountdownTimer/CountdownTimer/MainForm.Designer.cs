@@ -72,7 +72,9 @@
             // 
             // timerDB
             // 
-            this.timerDB.Interval = 5000;
+            this.timerDB.Enabled = true;
+            this.timerDB.Interval = 20000;
+            this.timerDB.Tick += new System.EventHandler(this.timerDB_Tick);
             // 
             // lblCounter
             // 
