@@ -38,17 +38,6 @@ namespace CountdownTimer
                     latitude = myReader.GetString(3);
                     longitude = myReader.GetString(4);
 
-                    //if(listUser.Count > 1)
-                    //{
-                    //    for (int i = 0; i < listUser.Count; i++)
-                    //    {
-                    //        if(listUser[i].counter < 2)
-                    //        {
-                    //            listUser.Add(new UserList(id, username, latitude, longitude, counter));
-                    //        }
-                    //    }
-                    //}
-
                     if (latitude != "")
                     {
                         listUser.Add(new UserList(id, username, latitude, longitude, counter));
@@ -99,7 +88,7 @@ namespace CountdownTimer
                             }
                             else
                             {
-                                //lblinfo.Text = "Removing " + id.ToString();                            
+                                listUser[i].counter = 0;
                             }
                         }
                     }

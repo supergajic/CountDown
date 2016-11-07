@@ -7,3 +7,12 @@ C:\Users\MAH\Documents\Visual Studio 2015\Projects\CountdownTimer\CountdownTimer
 C:\Users\MAH\Documents\Visual Studio 2015\Projects\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.csproj.GenerateResource.Cache
 C:\Users\MAH\Documents\Visual Studio 2015\Projects\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.exe
 C:\Users\MAH\Documents\Visual Studio 2015\Projects\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.pdb
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.exe
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.pdb
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\bin\Debug\CountdownTimer.exe
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\bin\Debug\CountdownTimer.pdb
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\bin\Debug\MySql.Data.dll
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.csprojResolveAssemblyReference.cache
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.MainForm.resources
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.Properties.Resources.resources
+C:\Users\MAH\Documents\CountDown\CountdownTimer\CountdownTimer\obj\Debug\CountdownTimer.csproj.GenerateResource.Cache
