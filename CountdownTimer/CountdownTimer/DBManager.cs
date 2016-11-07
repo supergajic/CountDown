@@ -186,7 +186,7 @@ namespace CountdownTimer
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
-                MySqlCommand verifyCommand = new MySqlCommand("DELETE treasures WHERE uid=" + id + " ;", myConn);
+                MySqlCommand verifyCommand = new MySqlCommand("DELETE FROM treasures WHERE uid=" + id + " ;", myConn);
                 myConn.Open();
                 verifyCommand.ExecuteNonQuery();
                 myConn.Close();

@@ -67,13 +67,13 @@
             // timer
             // 
             this.timer.Enabled = true;
-            this.timer.Interval = 5000;
+            this.timer.Interval = 4000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // timerDB
             // 
             this.timerDB.Enabled = true;
-            this.timerDB.Interval = 20000;
+            this.timerDB.Interval = 10000;
             this.timerDB.Tick += new System.EventHandler(this.timerDB_Tick);
             // 
             // lblCounter

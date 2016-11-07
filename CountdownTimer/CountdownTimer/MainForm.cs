@@ -14,6 +14,7 @@ namespace CountdownTimer
     public partial class MainForm : Form
     {
         DBManager dbManager = new DBManager();
+        bool not_at_the_same_god_damn_time = true;
 
         public MainForm()
         {
@@ -27,7 +28,11 @@ namespace CountdownTimer
 
         private void timer_Tick(object sender, EventArgs e)
         {
-            AddToListFromDB();
+            if (not_at_the_same_god_damn_time)
+            {
+                AddToListFromDB();
+                //not_at_the_same_god_damn_time = false;
+            }
         }
 
         private void AddToListFromDB()
@@ -76,14 +81,19 @@ namespace CountdownTimer
 
         private void timerDB_Tick(object sender, EventArgs e)
         {
-            CompareValuesFromDB();
-            for (int i = 0; i < dbManager.listUser.Count; i++)
+            timer.Enabled = false;
+            if (dbManager.listUser.Count > 0)
             {
-                if (dbManager.listUser[i].counter > 4)
+                CompareValuesFromDB();
+                for (int i = 0; i < dbManager.listUser.Count; i++)
                 {
-                    dbManager.RemoveUserInfo(dbManager.listUser[i].id, i);
-                }
+                    if (dbManager.listUser[i].counter > 4)
+                    {
+                        dbManager.RemoveUserInfo(dbManager.listUser[i].id, i);
+                    }
+                } 
             }
+            timer.Enabled = true;
         }
     }
 }
