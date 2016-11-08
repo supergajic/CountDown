@@ -9,7 +9,6 @@ namespace CountdownTimer
     class DBManager
     {
         public List<UserList> listUser = new List<UserList>();
-        private List<UserList> compareList = new List<UserList>();
 
         public void GetUsers()
         {
@@ -107,8 +106,6 @@ namespace CountdownTimer
                     }
                     
                 }
-
-                compareList.Add(new UserList(id, username, latitude, longitude));
             }
 
             catch (Exception ex)
@@ -117,40 +114,9 @@ namespace CountdownTimer
             }
         }
 
-        //public void AddCredit(int cardID, int amount)
-        //{
-        //    int getAmount = Int32.Parse(CheckCard(cardID));
-        //    int sum = getAmount + amount;
-
-        //    try
-        //    {
-        //        string myConnection = "datasource=sts.sytes.net;port=3306;username=liberte;password=vivelafrance;database=stiot";
-        //        MySqlConnection myConn = new MySqlConnection(myConnection);
-
-        //        MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
-        //        MySqlCommand verifyCommand = new MySqlCommand("UPDATE jojocards SET MONEY = '" + sum + "' WHERE ID='" + cardID + "' ;", myConn);
-        //        myConn.Open();
-        //        verifyCommand.ExecuteNonQuery();
-        //        myConn.Close();
-        //    }
-
-        //    catch (Exception ex)
-        //    {
-        //        //return null;
-        //    }
-        //}
-
-        public void CheckUserChange()
-        {
-
-        }
-
         public void RemoveUserInfo(int in_id, int user_index)
         {
             int id = in_id;
-            //string username = null;
-            //string latitude = null;
-            //string longitude = null;
 
             try
             {
@@ -176,9 +142,6 @@ namespace CountdownTimer
         public void RemoveTreasure(int in_id)
         {
             int id = in_id;
-            //string username = null;
-            //string latitude = null;
-            //string longitude = null;
 
             try
             {
