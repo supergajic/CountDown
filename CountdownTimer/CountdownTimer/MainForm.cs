@@ -91,6 +91,10 @@ namespace CountdownTimer
                     {
                         dbManager.RemoveUserInfo(dbManager.listUser[i].id, i);
                     }
+                }
+                if(dbManager.listUser.Count < 1)
+                {
+                    dbManager.listUser.Clear();
                 } 
             }
             timer.Enabled = true;

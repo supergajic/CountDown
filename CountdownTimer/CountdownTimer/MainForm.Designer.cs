@@ -73,15 +73,16 @@
             // timerDB
             // 
             this.timerDB.Enabled = true;
-            this.timerDB.Interval = 10000;
+            this.timerDB.Interval = 20000;
             this.timerDB.Tick += new System.EventHandler(this.timerDB_Tick);
             // 
             // lblCounter
             // 
             this.lblCounter.AutoSize = true;
+            this.lblCounter.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCounter.Location = new System.Drawing.Point(12, 435);
             this.lblCounter.Name = "lblCounter";
-            this.lblCounter.Size = new System.Drawing.Size(35, 13);
+            this.lblCounter.Size = new System.Drawing.Size(51, 20);
             this.lblCounter.TabIndex = 3;
             this.lblCounter.Text = "label1";
             // 

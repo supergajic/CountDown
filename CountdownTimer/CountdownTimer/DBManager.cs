@@ -47,6 +47,8 @@ namespace CountdownTimer
                         {
                             if (id == listUser[i].id)
                             {
+                                listUser[i].longitude = longitude;
+                                listUser[i].latitude = latitude;
                                 break;
                             }
                             else if (i == listUser.Count - 1)
