@@ -58,6 +58,7 @@ namespace CountdownTimer
                         }
                     }
                 }
+                myConn.Close();
             }
 
             catch (Exception ex)
@@ -108,6 +109,7 @@ namespace CountdownTimer
                     }
                     
                 }
+                myConn.Close();
             }
 
             catch (Exception ex)
