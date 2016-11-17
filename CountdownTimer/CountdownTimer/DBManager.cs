@@ -58,6 +58,7 @@ namespace CountdownTimer
                         }
                     }
                 }
+
                 myConn.Close();
             }
 
@@ -109,6 +110,7 @@ namespace CountdownTimer
                     }
                     
                 }
+
                 myConn.Close();
             }
 
@@ -128,7 +130,7 @@ namespace CountdownTimer
                 MySqlConnection myConn = new MySqlConnection(myConnection);
 
                 MySqlDataAdapter myDataAdapter = new MySqlDataAdapter();
-                MySqlCommand verifyCommand = new MySqlCommand("UPDATE users SET latitude = '', longitude = '', city = '', country = '' WHERE id=" + id + " ;", myConn);
+                MySqlCommand verifyCommand = new MySqlCommand("UPDATE users SET latitude = '', longitude = '', city = '', country = '', groupname = '' WHERE id=" + id + " ;", myConn);
                 myConn.Open();
                 verifyCommand.ExecuteNonQuery();
                 myConn.Close();
@@ -136,6 +138,7 @@ namespace CountdownTimer
                 RemoveTreasure(id);
 
                 listUser.RemoveAt(user_index);
+
             }
             catch (Exception ex)
             {
